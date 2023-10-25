@@ -1,35 +1,53 @@
-/* your-form.component.css */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Translucent black overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-  
-  .centered-form {
-    background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
-    padding: 20px;
-    border-radius: 10px;
-    
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Translucent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
-  .label-input-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
+body {
+  display: flex; /*Ajusta o modelo de layout as mudanças de resolução*/
+  align-items: center; /* Ajusta vertical*/
+  justify-content: center; /* Ajusta  horizontalmente */
+  height: 100vh; /* Altura */
+  margin: 0; /* Remove a margem padrão */
+}
 
-  .label-input-row label {
-    width: 40%; /* Adjust the width to control label size */
-  }
+.login-container label {
+  display: block; /* Define um elemento dentro do container para consumir largura e altura  */
+  color: #FFF;
+  margin: 10px;
+}
 
-  .label-input-row input {
-    width: 60%; /* Adjust the width to control input size */
-  }
+.login-container input {
+  display: flex;
+  align-items: center;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000d29;
+  color: #FFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra, leve efeito de elevação */
+}
+
+.login-container button:hover {
+  background-color: #060122;
+}
+
+.login-container .input-global {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
